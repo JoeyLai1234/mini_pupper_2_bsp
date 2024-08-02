@@ -4,12 +4,6 @@ import time
 
 disp = Display()
 
-disp.show_image('/var/lib/mini_pupper_bsp/test.png')
+disp.show_image('/var/lib/mini_pupper_bsp/shutdown.png')
 time.sleep(5)
-disp.show_state(BehaviorState.REST)
-time.sleep(5)
-disp.show_state(BehaviorState.TROT)
-time.sleep(5)
-disp.show_state(BehaviorState.LOWBATTERY)
-time.sleep(5)
-disp.show_ip()
+disp.show_image('/var/lib/mini_pupper_bsp/sleep.gif')
